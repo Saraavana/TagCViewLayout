@@ -2,8 +2,8 @@
 A customisable UICollectionView Layout which can used to add/remove tags into UICollectionView dynamically.
 
 
-![Add a Tag Demo](TagCViewLayout/demo/addTags.gif)
-![Remove a Tag Demo](TagCViewLayout/demo/removeTags.gif)
+![Add a Tag Demo](TagCViewLayout/TagCViewLayout/addTags.gif)
+![Remove a Tag Demo](TagCViewLayout/TagCViewLayout/removeTags.gif)
 
 
 ## License
