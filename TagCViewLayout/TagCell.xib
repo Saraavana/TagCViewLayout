@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagCell" id="c0G-07-vAr" userLabel="TagCell" customClass="TagCell" customModule="TagCViewLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="276" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Qb-Id-fND">
+                        <rect key="frame" x="0.0" y="1" width="276" height="48"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbT-ff-Tak">
+                                <rect key="frame" x="241" y="0.0" width="1" height="48"/>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.63529411764705879" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="D9P-EX-PJb"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvf-lB-SJG">
+                                <rect key="frame" x="3" y="0.0" width="237" height="48"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdN-J6-hLc">
+                                <rect key="frame" x="243" y="0.0" width="33" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="fAJ-4c-gwX"/>
+                                </constraints>
+                                <state key="normal" image="cancel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11764705882352941" green="0.63529411764705879" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xvf-lB-SJG" secondAttribute="bottom" id="5He-yk-2h7"/>
+                            <constraint firstItem="xvf-lB-SJG" firstAttribute="top" secondItem="3Qb-Id-fND" secondAttribute="top" id="6PR-tJ-asw"/>
+                            <constraint firstItem="NbT-ff-Tak" firstAttribute="leading" secondItem="xvf-lB-SJG" secondAttribute="trailing" constant="1" id="G6S-8x-OUT"/>
+                            <constraint firstItem="xvf-lB-SJG" firstAttribute="leading" secondItem="3Qb-Id-fND" secondAttribute="leading" constant="3" id="HL0-Kh-erI"/>
+                            <constraint firstItem="xdN-J6-hLc" firstAttribute="leading" secondItem="NbT-ff-Tak" secondAttribute="trailing" constant="1" id="LKM-0s-0m5"/>
+                            <constraint firstAttribute="trailing" secondItem="xdN-J6-hLc" secondAttribute="trailing" id="Lce-R4-LPl"/>
+                            <constraint firstAttribute="bottom" secondItem="xdN-J6-hLc" secondAttribute="bottom" id="UrM-Zu-x02"/>
+                            <constraint firstAttribute="bottom" secondItem="NbT-ff-Tak" secondAttribute="bottom" id="dlQ-a2-Pbt"/>
+                            <constraint firstItem="xdN-J6-hLc" firstAttribute="top" secondItem="3Qb-Id-fND" secondAttribute="top" id="fYe-c6-SKF"/>
+                            <constraint firstItem="NbT-ff-Tak" firstAttribute="top" secondItem="3Qb-Id-fND" secondAttribute="top" id="kCn-9g-OAi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3Qb-Id-fND" secondAttribute="trailing" id="10a-Dv-d3X"/>
+                <constraint firstAttribute="bottom" secondItem="3Qb-Id-fND" secondAttribute="bottom" constant="1" id="fJl-Jb-5Ku"/>
+                <constraint firstItem="3Qb-Id-fND" firstAttribute="top" secondItem="c0G-07-vAr" secondAttribute="top" constant="1" id="mVs-en-86o"/>
+                <constraint firstItem="3Qb-Id-fND" firstAttribute="leading" secondItem="c0G-07-vAr" secondAttribute="leading" id="w5F-1x-tKl"/>
+            </constraints>
+            <size key="customSize" width="276" height="50"/>
+            <connections>
+                <outlet property="removeTagBtn" destination="xdN-J6-hLc" id="GX9-Mb-v0r"/>
+                <outlet property="tagNameBtn" destination="xvf-lB-SJG" id="WzK-J1-Y7h"/>
+                <outlet property="tagView" destination="3Qb-Id-fND" id="xBH-cf-NkJ"/>
+            </connections>
+            <point key="canvasLocation" x="-112" y="-185"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cancel" width="11" height="11"/>
+    </resources>
+</document>

@@ -14,6 +14,9 @@
 		443EBF5F1ED830C400F53090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF5D1ED830C400F53090 /* LaunchScreen.storyboard */; };
 		443EBF6A1ED830C400F53090 /* TagCViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EBF691ED830C400F53090 /* TagCViewLayoutTests.swift */; };
 		443EBF751ED830C400F53090 /* TagCViewLayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EBF741ED830C400F53090 /* TagCViewLayoutUITests.swift */; };
+		443EBF841ED8322E00F53090 /* TagCViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EBF831ED8322E00F53090 /* TagCViewLayout.swift */; };
+		443EBF881ED8352200F53090 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EBF861ED8352200F53090 /* TagCell.swift */; };
+		443EBF891ED8352200F53090 /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF871ED8352200F53090 /* TagCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		443EBF701ED830C400F53090 /* TagCViewLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagCViewLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		443EBF741ED830C400F53090 /* TagCViewLayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCViewLayoutUITests.swift; sourceTree = "<group>"; };
 		443EBF761ED830C400F53090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443EBF831ED8322E00F53090 /* TagCViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCViewLayout.swift; sourceTree = "<group>"; };
+		443EBF861ED8352200F53090 /* TagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		443EBF871ED8352200F53090 /* TagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		443EBF531ED830C400F53090 /* TagCViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				443EBF851ED834C500F53090 /* Tag Cell */,
+				443EBF821ED8320400F53090 /* Tag Custom Layout */,
 				443EBF541ED830C400F53090 /* AppDelegate.swift */,
 				443EBF561ED830C400F53090 /* ViewController.swift */,
 				443EBF581ED830C400F53090 /* Main.storyboard */,
@@ -123,6 +131,23 @@
 				443EBF761ED830C400F53090 /* Info.plist */,
 			);
 			path = TagCViewLayoutUITests;
+			sourceTree = "<group>";
+		};
+		443EBF821ED8320400F53090 /* Tag Custom Layout */ = {
+			isa = PBXGroup;
+			children = (
+				443EBF831ED8322E00F53090 /* TagCViewLayout.swift */,
+			);
+			name = "Tag Custom Layout";
+			sourceTree = "<group>";
+		};
+		443EBF851ED834C500F53090 /* Tag Cell */ = {
+			isa = PBXGroup;
+			children = (
+				443EBF861ED8352200F53090 /* TagCell.swift */,
+				443EBF871ED8352200F53090 /* TagCell.xib */,
+			);
+			name = "Tag Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443EBF891ED8352200F53090 /* TagCell.xib in Resources */,
 				443EBF5F1ED830C400F53090 /* LaunchScreen.storyboard in Resources */,
 				443EBF5C1ED830C400F53090 /* Assets.xcassets in Resources */,
 				443EBF5A1ED830C400F53090 /* Main.storyboard in Resources */,
@@ -262,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443EBF881ED8352200F53090 /* TagCell.swift in Sources */,
 				443EBF571ED830C400F53090 /* ViewController.swift in Sources */,
+				443EBF841ED8322E00F53090 /* TagCViewLayout.swift in Sources */,
 				443EBF551ED830C400F53090 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NP46TXR25Z;
 				INFOPLIST_FILE = TagCViewLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TBS.TagCViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NP46TXR25Z;
 				INFOPLIST_FILE = TagCViewLayout/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TBS.TagCViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +546,7 @@
 				443EBF7B1ED830C400F53090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		443EBF7C1ED830C400F53090 /* Build configuration list for PBXNativeTarget "TagCViewLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +555,7 @@
 				443EBF7E1ED830C400F53090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		443EBF7F1ED830C400F53090 /* Build configuration list for PBXNativeTarget "TagCViewLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +564,7 @@
 				443EBF811ED830C400F53090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
