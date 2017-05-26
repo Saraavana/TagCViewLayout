@@ -17,6 +17,12 @@
 		443EBF841ED8322E00F53090 /* TagCViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EBF831ED8322E00F53090 /* TagCViewLayout.swift */; };
 		443EBF881ED8352200F53090 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EBF861ED8352200F53090 /* TagCell.swift */; };
 		443EBF891ED8352200F53090 /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF871ED8352200F53090 /* TagCell.xib */; };
+		443EBF8D1ED86BD000F53090 /* addTags.gif in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF8B1ED86BD000F53090 /* addTags.gif */; };
+		443EBF8E1ED86BD000F53090 /* addTags.gif in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF8B1ED86BD000F53090 /* addTags.gif */; };
+		443EBF8F1ED86BD000F53090 /* addTags.gif in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF8B1ED86BD000F53090 /* addTags.gif */; };
+		443EBF901ED86BD000F53090 /* removeTags.gif in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF8C1ED86BD000F53090 /* removeTags.gif */; };
+		443EBF911ED86BD000F53090 /* removeTags.gif in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF8C1ED86BD000F53090 /* removeTags.gif */; };
+		443EBF921ED86BD000F53090 /* removeTags.gif in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF8C1ED86BD000F53090 /* removeTags.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,8 @@
 		443EBF831ED8322E00F53090 /* TagCViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCViewLayout.swift; sourceTree = "<group>"; };
 		443EBF861ED8352200F53090 /* TagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
 		443EBF871ED8352200F53090 /* TagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
+		443EBF8B1ED86BD000F53090 /* addTags.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = addTags.gif; sourceTree = "<group>"; };
+		443EBF8C1ED86BD000F53090 /* removeTags.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = removeTags.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 		443EBF531ED830C400F53090 /* TagCViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				443EBF8A1ED86BBE00F53090 /* Demo */,
 				443EBF851ED834C500F53090 /* Tag Cell */,
 				443EBF821ED8320400F53090 /* Tag Custom Layout */,
 				443EBF541ED830C400F53090 /* AppDelegate.swift */,
@@ -148,6 +157,15 @@
 				443EBF871ED8352200F53090 /* TagCell.xib */,
 			);
 			name = "Tag Cell";
+			sourceTree = "<group>";
+		};
+		443EBF8A1ED86BBE00F53090 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				443EBF8B1ED86BD000F53090 /* addTags.gif */,
+				443EBF8C1ED86BD000F53090 /* removeTags.gif */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +281,9 @@
 				443EBF891ED8352200F53090 /* TagCell.xib in Resources */,
 				443EBF5F1ED830C400F53090 /* LaunchScreen.storyboard in Resources */,
 				443EBF5C1ED830C400F53090 /* Assets.xcassets in Resources */,
+				443EBF8D1ED86BD000F53090 /* addTags.gif in Resources */,
 				443EBF5A1ED830C400F53090 /* Main.storyboard in Resources */,
+				443EBF901ED86BD000F53090 /* removeTags.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +291,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443EBF8E1ED86BD000F53090 /* addTags.gif in Resources */,
+				443EBF911ED86BD000F53090 /* removeTags.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443EBF8F1ED86BD000F53090 /* addTags.gif in Resources */,
+				443EBF921ED86BD000F53090 /* removeTags.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
