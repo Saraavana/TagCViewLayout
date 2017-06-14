@@ -48,7 +48,9 @@ class TagCViewLayout: UICollectionViewLayout
         
         let height = cellPadding + 30 + cellPadding
         
-        if let width = delegate?.collectionView(collectionView: collectionView!, widthForTagsAtIndexPath: indexPath, withHeight: CGFloat(height))
+        var width = delegate!.collectionView(collectionView: collectionView!, widthForTagsAtIndexPath: indexPath, withHeight: CGFloat(height))
+        
+        if width < (collectionView?.bounds.width)!
         {
           
           var xOff = CGFloat()
@@ -91,8 +93,53 @@ class TagCViewLayout: UICollectionViewLayout
           cache.append(attributes)
           contentHeight = max(contentHeight, frame.maxY)
           column = xOffset[column] >= contentWidth ? 0 : column+1
+        } else {
+            var xOff = CGFloat()
+            var yOff = CGFloat()
+            
+            if column == 0
+            {
+                xOff = 0
+                prevTagWidth = width
+            }
+            else
+            {
+                let reversedOffset = Array(xOffset.reversed())
+                
+                if let prevOffset = reversedOffset.first
+                {
+                    xOff = prevOffset + CGFloat(cellPadding) + prevTagWidth - 15
+                    prevTagWidth = width
+                }
+                
+                if xOff+width >= contentWidth
+                {
+                    prevTagWidth = width
+                    xOff = 0
+                    row += 1
+                }
+            }
+            
+            xOffset.append(xOff)
+            yOff = CGFloat(row) * CGFloat(height-10)
+            yOffset.append(yOff)
+            
+            if width > collectionView!.bounds.width {
+                print("width more than required")
+                width = (collectionView?.bounds.size.width)!
+            }
+            
+            let frame = CGRect(x: xOffset[column], y: yOffset[column], width: width, height: CGFloat(height))
+            let insetFrame = frame.insetBy(dx: CGFloat(cellPadding), dy: CGFloat(cellPadding))
+            
+            let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
+            attributes.frame = insetFrame
+            
+            cache.append(attributes)
+            contentHeight = max(contentHeight, frame.maxY)
+            column = xOffset[column] >= contentWidth ? 0 : column+1
+
         }
-        
       }
     }
   }
