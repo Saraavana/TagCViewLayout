@@ -14,7 +14,7 @@ class ViewController: UIViewController
   @IBOutlet weak var collectionView: UICollectionView!
   
   //MARK: -Variables
-  var tags = ["Some really long tag which is longer in legth than the current view.","Swift","iOS 10.3","Objective-C","Virtual Reality","Material Design","App Store","iTunes","Android","Animations","Sketch"]
+  var tags = ["Swift","Lorem ipsum dolor sit amet, consectetur adipiscing elit","iOS 10.3","Objective-C","Virtual Reality","Material Design","App Store","iTunes","Sed ut perspiciatis unde omnis iste natus error sit voluptatem","Android","Animations","Sketch"]
   
   //MARK: -View Methods
   override func viewDidLoad()
