@@ -14,7 +14,7 @@ class ViewController: UIViewController
   @IBOutlet weak var collectionView: UICollectionView!
   
   //MARK: -Variables
-  var tags = ["Swift","iOS 10.3","Objective-C","Virtual Reality","Material Design","App Store","iTunes","Android","Animations","Sketch"]
+  var tags = ["Some really really really really really really really large text","Swift","iOS 10.3","Objective-C","Virtual Reality","Material Design","App Store","iTunes","Android","Animations","Sketch"]
   
   //MARK: -View Methods
   override func viewDidLoad()
@@ -62,7 +62,7 @@ extension ViewController : UICollectionViewDataSource
   {
    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TagCell", for: indexPath) as! TagCell
    
-   cell.tagNameBtn.setTitle(tags[indexPath.row], for: .normal)
+   cell.tagNameLbl.text = tags[indexPath.row]
    cell.removeTagBtn.addTarget(self, action: #selector(self.removeBtnTapped(sender:)), for: .touchUpInside)
     
    return cell
@@ -77,6 +77,17 @@ extension ViewController : TagCViewLayoutDelegate
     let lbl = UILabel(frame: view.frame)
     lbl.text = self.tags[indexPath.row]
     lbl.sizeToFit()
+    
+    do
+    {
+      
+    }
+    
+    if collectionView.bounds.width < lbl.frame.size.width + 53
+    {
+      print("The widht is \(lbl.frame.size.width + 53)")
+    }
+    
     return lbl.frame.size.width + 53
   }
 }

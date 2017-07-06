@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440FE4CC1F0E38E100DE3F6A /* removeLargeTags.gif in Resources */ = {isa = PBXBuildFile; fileRef = 440FE4CB1F0E38E100DE3F6A /* removeLargeTags.gif */; };
+		440FE4CD1F0E38E100DE3F6A /* removeLargeTags.gif in Resources */ = {isa = PBXBuildFile; fileRef = 440FE4CB1F0E38E100DE3F6A /* removeLargeTags.gif */; };
+		440FE4CE1F0E38E100DE3F6A /* removeLargeTags.gif in Resources */ = {isa = PBXBuildFile; fileRef = 440FE4CB1F0E38E100DE3F6A /* removeLargeTags.gif */; };
 		443EBF551ED830C400F53090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EBF541ED830C400F53090 /* AppDelegate.swift */; };
 		443EBF571ED830C400F53090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443EBF561ED830C400F53090 /* ViewController.swift */; };
 		443EBF5A1ED830C400F53090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443EBF581ED830C400F53090 /* Main.storyboard */; };
@@ -43,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		440FE4CB1F0E38E100DE3F6A /* removeLargeTags.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = removeLargeTags.gif; sourceTree = "<group>"; };
 		443EBF511ED830C400F53090 /* TagCViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagCViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443EBF541ED830C400F53090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443EBF561ED830C400F53090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				443EBF8B1ED86BD000F53090 /* addTags.gif */,
+				440FE4CB1F0E38E100DE3F6A /* removeLargeTags.gif */,
 				443EBF8C1ED86BD000F53090 /* removeTags.gif */,
 			);
 			name = Demo;
@@ -279,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				443EBF891ED8352200F53090 /* TagCell.xib in Resources */,
+				440FE4CC1F0E38E100DE3F6A /* removeLargeTags.gif in Resources */,
 				443EBF5F1ED830C400F53090 /* LaunchScreen.storyboard in Resources */,
 				443EBF5C1ED830C400F53090 /* Assets.xcassets in Resources */,
 				443EBF8D1ED86BD000F53090 /* addTags.gif in Resources */,
@@ -293,6 +299,7 @@
 			files = (
 				443EBF8E1ED86BD000F53090 /* addTags.gif in Resources */,
 				443EBF911ED86BD000F53090 /* removeTags.gif in Resources */,
+				440FE4CD1F0E38E100DE3F6A /* removeLargeTags.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +309,7 @@
 			files = (
 				443EBF8F1ED86BD000F53090 /* addTags.gif in Resources */,
 				443EBF921ED86BD000F53090 /* removeTags.gif in Resources */,
+				440FE4CE1F0E38E100DE3F6A /* removeLargeTags.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

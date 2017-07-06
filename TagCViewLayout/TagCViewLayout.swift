@@ -23,6 +23,9 @@ class TagCViewLayout: UICollectionViewLayout
   var delegate :TagCViewLayoutDelegate?
   
   var cellPadding = 7
+  var exceededWidth = CGFloat()
+  
+  var widenRow = Int()
   
   private var cache = [UICollectionViewLayoutAttributes]()
   private var contentHeight :CGFloat = 0.0
@@ -48,7 +51,7 @@ class TagCViewLayout: UICollectionViewLayout
         
         let height = cellPadding + 30 + cellPadding
         
-        if let width = delegate?.collectionView(collectionView: collectionView!, widthForTagsAtIndexPath: indexPath, withHeight: CGFloat(height))
+        if let cView = self.collectionView,let width = delegate?.collectionView(collectionView: cView, widthForTagsAtIndexPath: indexPath, withHeight: CGFloat(height))
         {
           
           var xOff = CGFloat()
@@ -80,7 +83,16 @@ class TagCViewLayout: UICollectionViewLayout
           xOffset.append(xOff)
           yOff = CGFloat(row) * CGFloat(height)
           yOffset.append(yOff)
+
           
+          if let cViewWidth = collectionView?.bounds.width, width > cViewWidth {
+            exceededWidth = width - cViewWidth > exceededWidth ? width - cViewWidth : exceededWidth
+          }
+
+          let cViewWidth = cView.bounds.width
+          if width > cViewWidth {
+            exceededWidth = width - cViewWidth > exceededWidth ? width - cViewWidth : exceededWidth
+          }
           
           let frame = CGRect(x: xOffset[column], y: yOffset[column], width: width, height: CGFloat(height))
           let insetFrame = frame.insetBy(dx: CGFloat(cellPadding), dy: CGFloat(cellPadding))
@@ -99,7 +111,7 @@ class TagCViewLayout: UICollectionViewLayout
   
   override var collectionViewContentSize: CGSize
   {
-    return CGSize(width: contentWidth, height: contentHeight)
+    return CGSize(width: contentWidth+exceededWidth, height: contentHeight)
   }
   
   

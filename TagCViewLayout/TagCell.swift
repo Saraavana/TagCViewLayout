@@ -11,8 +11,9 @@ import UIKit
 class TagCell: UICollectionViewCell
 {
   @IBOutlet weak var tagView: UIView!
-  @IBOutlet weak var tagNameBtn: UIButton!
   @IBOutlet weak var removeTagBtn: UIButton!
+  @IBOutlet weak var tagNameLbl: UILabel!
+  
 
     override func awakeFromNib()
     {
